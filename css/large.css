@@ -1,0 +1,625 @@
+@media screen and (min-width: 601px){
+
+    
+
+    body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    p{
+       
+        font-size:1em;
+    
+    }
+    
+    ul {
+    
+        list-style:none;
+        padding: 0;
+        margin:0;
+    
+    }
+
+    main{
+        width:93%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    
+    
+     /*---------------------header-------------------*/
+    
+     header{
+      
+        background-color:#2d2e86;
+        border: 1px solid #000;
+        box-shadow: 0 0 30px #000;
+        width:100%;
+       
+    
+    
+       
+    }
+
+    #headerwrapper{
+        text-align:center;
+    
+    }
+    
+    
+    
+    header img{
+        position:relative;
+        top:3.5em;
+        padding-bottom:2em;
+        
+       
+    
+    }
+
+    #flexheader{
+        display:flex;
+        justify-content:center;
+    }
+    
+   /* #headertext{
+        display:inline-block;
+        padding-bottom:3.5em;
+        text-align:center;
+    
+    }*/
+    
+    h1{
+        color:#fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3.5em;
+        margin-top:1em;
+        margin-bottom:0px;
+        padding:0px;
+        text-align: left;
+    
+    
+        }
+    
+    #motto{
+        font-family: 'Roboto', sans-serif;
+        font-size:1.2em;
+        font-style:italic;
+        color:#fff;
+        padding:0px;
+        margin:0px;
+        text-align: left;
+      
+    }
+    
+
+    
+    
+
+/*----nav---*/
+
+
+nav button{
+    display:none;
+}
+
+
+
+
+  
+
+          
+
+    nav ul li a{
+        display:inline-block;
+        padding:.5rem .8rem;
+        text-decoration: none;
+        color: #fff;
+        font-weight:bold;
+    }
+    
+
+
+
+
+
+nav{
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    background-color:#9294c9;
+
+
+    
+
+    }
+
+nav ul li {
+    display:inline-block;
+    
+     
+     }
+
+
+nav ul{
+        list-style-type:none;
+        text-align: center;
+     }
+
+
+      
+         nav ul li .active a{
+          background-color:rgba(0,0,0,0.3);
+          color:#fff;
+      
+      
+      }
+      
+      
+      
+      nav ul li a:hover{
+          background-color:rgba(0,0,0,0.4);
+          
+      
+      }
+/*----------------------top---------------------------------------------*/
+    
+  
+    
+    
+     /* h2 Preston*/
+     main>h2{
+        font-family: 'Roboto', sans-serif;
+        font-size:1.75em;
+        text-align: center;
+        margin-bottom:-2.7em;
+        
+       
+    
+    }
+    
+   #town{
+       width:100%;
+       margin-left:auto;
+       margin-right:auto;
+       box-shadow: 0 5px 10px #000;
+       position:relative;
+       bottom:10em;
+       z-index:1;
+       display:inline-block;
+       margin-bottom:5em;
+    
+    
+    }
+    /* weather continer */
+    
+    
+    
+    
+    
+    #weatherBox{
+        background-color:rgba(45,46,134,60%);
+        width:20em;
+        color:#fff;
+        position:relative;
+        left:.5em;
+        top:5.5em;
+        z-index:2;
+        padding-bottom:1em;
+        box-shadow:0 0 1em #000 ;
+
+    }
+    
+    #weathersummary{
+    font-family: 'Roboto', sans-serif, bold;
+    font-size:2em;
+    padding-top: 5%;
+    padding-bottom:5%;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    margin-bottom:0;
+    }
+    
+    main ul{
+        list-style-type:none;
+    
+    }
+
+    #forecast{
+        text-align:center;
+        margin-bottom:1.5em;
+        margin-top:-5em;
+
+    }
+    
+    
+    
+    
+    .left{
+        font-size:1.5em;
+        text-align:right;
+        font-family: 'Roboto', sans-serif;
+        float:left;
+        margin-top:0px;
+        margin-left:15%;
+        margin-right:auto;
+        padding-top:.5em;
+       }
+
+    
+    .right{
+        font-family: 'Roboto', sans-serif;
+        font-weight:bold;
+        color: #eccb0b;
+        font-size:1.5em;
+        padding-left:.5em;
+        padding-top:.5em;
+        float:left;
+        margin-top:0px;
+       
+    }
+    
+    
+    .small{
+         display:none;
+     }
+    
+     /*middle*/
+     #middle{
+        background-color:#9294c9;
+        margin-right:5%;
+        margin-left:5%;
+        width:90%;
+        border: 1px solid #000;
+    }
+
+    #founders{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.75em;
+    margin:1em 0 0 1.3em;
+
+        
+    
+    
+    }
+
+    #author {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 5%;
+    }
+
+    
+  
+@media  (max-width:911px){
+#parkimgL {
+    display: block;
+    padding-top: 3em;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+     padding-bottom: 2em;
+
+     
+}
+}
+
+@media screen and (min-width:911px){
+
+    #parkimgL {
+        display: block;
+        padding-top: 6.2em;
+        float: right;
+        padding-left: 1.2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+        margin-bottom:3em;
+    }               
+
+    #founders{
+        font-family: 'Roboto', sans-serif;
+        font-size:1.75em;
+        margin:.5em 0 0 5%;
+            
+        
+        
+        }
+}
+
+#parkimgS{
+    display:none;
+}
+
+    
+    
+    article p{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        padding-bottom:1.5em;
+    }
+    
+    
+    
+     /*footer*/
+
+
+     footer{
+         clear:both;
+         margin-top:3em;
+     }
+    
+     #cloudswatching{
+        font-family: 'Roboto', sans-serif, bold;
+        font-size:1em;
+        padding-top:5%;
+        margin:0;
+    
+    }
+    
+     #bottom{
+        width:100%;
+        font-style:normal;
+        background-color:#9294c9;
+    
+        
+    
+    
+    }
+
+    #largewrapper{
+        width:960px;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+
+    footer h3{
+        font-size:1.5em;
+
+
+    }
+    
+    .street{
+        line-height:.5em;
+    
+    }
+    
+    .contact{
+        line-height:.5em; 
+        margin-top:2em;
+    }
+    
+  
+    
+    address{
+        font-style:normal;
+        padding-left:9.5%;
+        float:left;
+        
+    }
+
+
+    #bold{
+        margin-top:1em;
+        margin-right:5em;
+    font-size:1.2em;
+    font-weight: bold;
+
+}
+
+#gap{
+    margin-top:.5em;
+
+}
+        
+
+
+    #copyright{
+        background-color:#2d2e86;
+        color:#fff;
+        text-align:center;
+        padding-top:10px;
+        padding-bottom:10px;
+        width:100%;
+        font-size:0.75em;
+        clear:both;
+    
+    }
+
+    footer img {
+        float:left;
+        padding-top:1em;
+        padding-bottom:1em;
+    }
+    
+    
+    .clearfix:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+
+/*--json---*/
+.jsoncontent{
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#fff;
+    border:none;
+}
+    
+    
+    
+
+/*------galleryflex--------*/
+
+
+@media screen and (min-width: 1000px){
+     .gridcontainer{
+        display:grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap:20px;
+        
+    }
+
+
+    figure{
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+}
+
+  
+
+    .shadow:hover {
+        box-shadow: 0 0 50px #000 ;
+    }
+    
+    
+          
+            
+            
+    
+    figcaption{
+       font-family: 'Roboto', sans-serif;
+    }
+    
+    #galleryh1{
+        color:#9294c9;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom:1em;
+    
+    }
+          
+       
+
+        /*lagest screen media querry*/
+
+
+        @media (min-width: 818px){
+
+            nav ul li a{
+               display:inline-block;
+               padding:1rem 2rem;
+               text-decoration: none;
+               color: #fff;
+               font-weight:bold;
+               }
+
+               #headertext{
+                display:inline-block;
+                padding-bottom:3.5em;
+                text-align:center;
+            
+            }
+            
+            h1{
+                color:#fff;
+                font-family: 'Roboto', sans-serif;
+                font-size: 4.5em;
+                margin-top:1em;
+                margin-bottom:0px;
+                padding:0px;
+                text-align: left;
+            
+            
+                }
+            
+            #motto{
+                font-family: 'Roboto', sans-serif;
+                font-size:1.7em;
+                font-style:italic;
+                color:#fff;
+                padding:0px;
+                margin:0px;
+                text-align: left;
+              
+            }
+
+            footer img {
+                float:left;
+                padding-top:1em;
+                padding-bottom:1em;
+            }
+
+            
+    #bold{
+        margin-top:1em;
+        margin-right:5em;
+    font-size:1.2em;
+    font-weight: bold;
+               }
+            }
+
+            /*table*/
+
+           table{ width:45%;
+            margin-left:auto;
+            margin-right:auto;
+            border-collapse: collapse;
+           }
+
+           th{
+            background-color:#628ca6;
+            text-align: center;
+            border: 1px solid #000;
+            padding:.5em;
+            color:#fff;
+        }
+
+        td{
+            text-align: center;
+            border: 1px solid #000;
+            padding:.5em;
+            color:#fff;
+        
+        }
+.townBox{
+    border:solid 2px #000;
+    background-color:#2d2e86;
+    margin-top:3em;
+    text-align:center;
+   
+}
+
+
+        /*index api town boxes*/
+
+
+        
+
+
+               @media screen and (min-width:972px){
+                footer img {
+                    float:left;
+                    padding-top:1em;
+                    padding-bottom:1em;
+                }
+
+                article p {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                   
+                    line-height: 1.3em;
+                   
+                }
+            }
+
+        
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="preston town weather site">
+        <link href="css/normalize.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/small.css">
+        <link rel="stylesheet" type="text/css" href="css/medium.css">
+        <link rel="stylesheet" type="text/css" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="scripts/hamburger.js"></script>
+        <title>Clouds Watching</title>
+       
+
+    </head>
+    <body>
+        
+           
+            
+            <header id="flexheader">
+                    <div id="headerwrapper" class="clearfix">
+                        <picture>
+                                <source  media="(min-width:601px)" srcset="images/sun150px.png">
+                                <source  media="(max-width:600px)" srcset="images/sun69px.png">
+                                <img  src="images/sun69px.png" alt="vector sun art">
+                         </picture>
+                         <div id= "headertext">
+                            <h1>Clouds Watching</h1>
+                            <p id="motto">Relax, it's just the weather.</p>
+                         </div>
+                     </div>
+                    
+            </header>
+             
+    
+            <nav class="clearfix">
+                
+                    
+                        <button onclick="toggleMenu()">&#9776;</button>
+                        <ul  id="primaryNav" class="hide">
+                        
+                        <li class="active">
+                            <a href=index.html>Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="preston.html">Preston</a>
+                        </li>
+                        <li class="active">
+                            <a href="sodasprings.html">Soda Springs</a>
+                        </li>
+                        <li class="active">
+                            <a href="fishhaven.html">Fish Haven</a>
+                        </li>
+                        <li class="active">
+                            <a href="stormcenter.html">Storm Center</a>
+                        </li>
+                        <li class="active">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                  </ul>
+                </nav>
+
+                <main id="galleryMain">
+
+                    <h1 id="galleryh1">Weather Gallery</h1>
+                    <div class="gridcontainer">
+                        <figure>
+                            <picture >
+                                <source media="(min-width: 320px) and (max-width: 600px)"  srcset="images/winter200px.jpg">
+                                <img class="shadow" src="images/winter300px.jpg" alt="snowey picture"> 
+                            </picture>
+                            <figcaption>Picture of Last Winter</figcaption>
+                        </figure>
+                        <figure>
+                            <picture >
+                                <source media="(min-width: 320px) and (max-width: 959px)"   srcset="images/winter200px.jpg">
+                                <img class="shadow" src="images/desert300px.jpg" alt="desert picture"> 
+                            </picture>
+                            <figcaption>Picture of the Desert</figcaption>
+                        </figure> 
+                        <figure>
+                               <picture >
+                                    <source media="(min-width: 320px) and (max-width: 959px)"  srcset="images/winter200px.jpg">
+                                    <img class="shadow" src="images/sunset300px.jpg" alt="sunset picture"> 
+                                </picture>
+                        <figcaption>Picture the Sunset</figcaption>
+                        </figure>
+                            <figure>
+                                   <picture >
+                                        <source media="(min-width: 320px) and (max-width: 959px)"  srcset="images/storm200px.jpg">
+                                        <img class="shadow" src="images/storm300px.jpg" alt="storm picture"> 
+                                    </picture>
+                                <figcaption>Winning Storm Picture</figcaption>
+                            </figure>
+                            <figure>
+                                  <picture >
+                                        <source media="(min-width: 320px) and (max-width: 959px)" srcset="images/fall200px.jpg">
+                                        <img class="shadow" src="images/fall300px.jpg" alt="fall picture"> 
+                                    </picture>
+                                <figcaption>Picture of Fall</figcaption>
+                                
+                            </figure>
+                            <figure>
+                                   <picture >
+                                       <source  media="(min-width: 320px) and (max-width: 959px)"  srcset="images/spring200px.jpg">
+                                       <img class="shadow" src="images/spring300px.jpg" alt="spring picture">
+                                  </picture>
+                                <figcaption>Pictures of Spring</figcaption>
+                               
+                            </figure>
+                    </div>              
+            </main>
+            <footer id="bottom" class="clearfix">
+                    <div id="largewrapper">
+                         <address>
+                            <ul>
+                             <li id="bold">Clouds Watching </li>
+                             <li>30 N 1st E </li>
+                             <li>Preston ID,83263</li>
+                             <li id="gap">&#9742;  123.456.1234 </li>
+                             <li>&#9993;  Clouds watching.com </li>
+                             </ul>
+                             
+                         </address>
+                     
+                    
+                    <div id="positioning">
+                        
+                             <img class="small" src="images/map350px.png" alt="map">
+                             <img class="large"  src="images/map350px.png" alt="map">
+                    </div>
+                 </div>
+                    
+                     <div id="copyright">
+                             <p> &copy; 2020 Clouds Watching | Attributions | Greg La Plant </p>
+                             <p id="currentdate">why dosent this work</p>
+                             </div>
+
+                         </footer>
+<script src="scripts/currentdate.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

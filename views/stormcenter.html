@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="preston town weather site">
+        <link href="css/normalize.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/small.css">
+        <link rel="stylesheet" type="text/css" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/weathersummary.js"></script>
+        <title>Clouds Watching</title>
+       
+
+    </head>
+    <body>
+        
+           
+            
+            <header id="flexheader">
+                    <picture>
+                        <source media="(min-width:601px)"  srcset ="images/sun150px.png">
+                        <source media="(max-width:600px)"  srcset ="images/sun69px.png">
+                    <img src="images/sun69px.png" alt="vector sun art" >
+                    </picture>
+                    <div id= "headertext">
+                    <h1>Clouds Watching</h1>
+                    <p id="motto">Relax, it's just the weather.</p>
+                    </div>  
+                </header>
+    
+            <nav class="clearfix">
+                
+                    
+                        <button onclick="toggleMenu()">&#9776;</button>
+                        <ul  id="primaryNav" class="hide">
+                        
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="preston.html">Preston</a>
+                        </li>
+                        <li class="active">
+                            <a href="sodasprings.html">Soda Springs</a>
+                        </li>
+                        <li class="active">
+                            <a href="fishhaven.html">Fish Haven</a>
+                        </li>
+                        <li class="active">
+                            <a href="stormcenter.html">Storm Center</a>
+                        </li>
+                        <li class="active">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                  </ul>
+                </nav>
+
+                <form method="get" action="thanks.html">
+                      <fieldset>
+                            <legend>Contact</legend>
+
+                                <!--full name using input of type text and 
+                                is required and only accepts alpha characters with a minimum of five characters 
+                                using a regular expression pattern-->
+                                <label class='block'>Name:</label>
+                                <input class='block' type="text" name="name" required>
+
+                                <!--email using input of type email and use a placeholder to provide a demo email-->
+                                <label class='block'>Email:</label>
+                                <input class='block' type="email" name="email"
+                                placeholder="someone@gmail.com" required>
+
+                                <!--phone number using input of type tel and is required-->
+                                <label class='block'>Phone:</label>
+                                <input  class='block' type="tel" name="phone"
+                                 placeholder="##########" maxlength="10">
+
+                                <!--zip code using input of type number and is required-->
+                                <label class='block' for="num">Zip Code:</label>
+                                <input class='block' type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep">
+                                
+
+                        </fieldset>
+                        <fieldset>
+                                <legend>Storm Report</legend>
+                                
+                                <!--storm date using input of type date-->
+                                  <label class='block' >Storm Date:</label>
+                                  <input class='block' type="date">
+                                
+                                <!--storm type using input with a 
+                                   list attribute using a datalist of suggestions including 
+                                   "Flash Flood," "Hail," "Hurricane," "Thunderstorm," and "Tornado."-->
+                               
+                                  <label class='block' for="stormtype">Storm Type:</label>
+                                       <input class='block' list="storms"  name="Storm Type" >
+                                       <datalist>
+                                         <option value="Please Select">
+                                         <option value="Flash Flood">
+                                         <option value="Hail">
+                                         <option value="Hurricane">
+                                         <option value="Thunderstorm">
+                                         <option value="Tornado">
+                                       </datalist>
+
+                              <!---
+                                storm severity using type range (1 to 10)
+                                with a corresponding label that indicates the current range value from 1 to 10. 
+                                Hint: See the Pen HTML Form example objects -->
+
+                                  <label class='block' >Storm Severity from 1 to 10</label>
+                                  
+                                  <input class='block' type="range" id="rating" value="5" min="1" max="10" step="1" 
+                                  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		                         <span id="ratingvalue">5</span>
+                            
+                                <!--storm region using select with drop-down options of 
+                                    "Preston," Soda Springs, and "Fish Haven."-->
+
+                                    <label class='block' > Storm Region:</label>
+                                        <select class='block'name="StormRegion">
+                                        <option value="Please Select">Select Region</option>
+                                        <option value="Preston">Preston</option>
+                                        <option value="Soda Springs">Soda Spr ings</option>
+                                        <option value="Fish Haven">Fish Haven</option>
+                            
+                      </fieldset>
+                                
+                        <fieldset>
+                                 <legend>Danger Level</legend>
+                                    <label class='block'>Are you in danger?</label>
+                                    <div class= 'block'>
+                                    <label><input type="radio" name="danger"  value="Yes">Yes</label>
+                                    <label><input type="radio"  name="danger" value="No">No</label>
+                                    <label><input type="radio"  name="danger" value="Maybe">Maybe</label>
+                                    </div>
+
+                                  <!--- additional information or comments using a textarea
+                                   form submission button using input of type submit-->
+                                    <lable class='block'>Additional Comments</lable>
+                                    <textarea class='block' maxlength="150"></textarea>
+                        </fieldset>
+                    <input class='block' type="submit" value="send">
+                </form>
+
+
+
+
+
+
+               <!--- Create a new file named "stormcenter.html" within the week folder. Start with a copy of the latest version of one of your pages for the weather site as a template for this page.
+The form page must contain the following elements, types and attributes:
+
+
+Each field element should have an appropriate name attribute
+Ensure that the design meets standards such as eye tracking in a straight line and proper keyboard progression for accessibility. See Designing more Efficient Forms (Links to an external site.)Links to an external site.
+ (Links to an external site.)
+ Links to an external site.Your form design SHOULD NOT be exactly like the tutorial given on building a form.
+  Incorporate your own design ideas and patterns.
+
+Create a new page labeled "thanks.html" that expresses gratitude for filling out the form. 
+This page should load when the user has successfully submitted the form. 
+Hint: Review the <form> attributes.-->
+
+
+
+
+                 <footer id="bottom" class="clearfix">
+                       <div id="largewrapper">
+                            <address>
+                               <ul>
+                                <li id="bold">Clouds Watching </li>
+                                <li>30 N 1st E </li>
+                                <li>Preston ID,83263</li>
+                                <li id="gap">&#9742;  123.456.1234 </li>
+                                <li>&#9993;  Clouds watching.com </li>
+                                </ul>
+                                
+                            </address>
+                        
+                       
+                       <div id="positioning">
+                                <img class="small" src="images/map350px.png" alt="map">
+                                <img class="large"  src="images/map350px.png" alt="map">
+                       </div>
+                    </div>
+                       
+                        <div id="copyright">
+                                <p> &copy 2020 Clouds Watching | Attributions | Greg La Plant </p>
+                                <p>Wendsday May 20, 2020</p>
+                        </div>
+
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>
