@@ -1,15 +1,7 @@
-@media screen and (min-width: 601px){
+@media screen and (min-width: 50rem){
 
     
 
-    body{
-        width:100%;
-        height:100%;
-        margin:0;
-        padding:0;
-        overflow-x:hidden;
-        font-family: 'Roboto', sans-serif;
-    }
     
     p{
        
@@ -25,44 +17,32 @@
     
     }
 
-    main{
-        width:93%;
-        margin-left:auto;
-        margin-right:auto;
+  
+
+
+    .center_large{
+        width:75%;
+        margin:auto;
     }
 
 
-    
+
     
      /*---------------------header-------------------*/
     
-     header{
-      
-        background-color:#2d2e86;
-        border: 1px solid #000;
-        box-shadow: 0 0 30px #000;
-        width:100%;
+   
        
     
     
        
-    }
+    
 
     #headerwrapper{
         text-align:center;
     
     }
     
-    
-    
-    header img{
-        position:relative;
-        top:3.5em;
-        padding-bottom:2em;
-        
-       
-    
-    }
+   
 
     #flexheader{
         display:flex;
@@ -76,7 +56,7 @@
     
     }*/
     
-    h1{
+   /* h1{
         color:#fff;
         font-family: 'Roboto', sans-serif;
         font-size: 3.5em;
@@ -86,7 +66,7 @@
         text-align: left;
     
     
-        }
+        }*/
     
     #motto{
         font-family: 'Roboto', sans-serif;
@@ -105,12 +85,12 @@
 
 /*----nav---*/
 
-
+/*
 nav button{
     display:none;
 }
 
-
+*/
 
 
   
@@ -165,6 +145,7 @@ nav ul{
       
       nav ul li a:hover{
           background-color:rgba(0,0,0,0.4);
+          width:100%;
           
       
       }
@@ -178,20 +159,17 @@ nav ul{
         font-family: 'Roboto', sans-serif;
         font-size:1.75em;
         text-align: center;
-        margin-bottom:-2.7em;
+        
         
        
     
     }
     
-   #town{
+   .town{
        width:100%;
        margin-left:auto;
        margin-right:auto;
        box-shadow: 0 5px 10px #000;
-       position:relative;
-       bottom:10em;
-       z-index:1;
        display:inline-block;
        margin-bottom:5em;
     
@@ -203,35 +181,14 @@ nav ul{
     
     
     
-    #weatherBox{
-        background-color:rgba(45,46,134,60%);
-        width:20em;
-        color:#fff;
-        position:relative;
-        left:.5em;
-        top:5.5em;
-        z-index:2;
-        padding-bottom:1em;
-        box-shadow:0 0 1em #000 ;
-
-    }
-    
-    #weathersummary{
-    font-family: 'Roboto', sans-serif, bold;
-    font-size:2em;
-    padding-top: 5%;
-    padding-bottom:5%;
-    text-align: center;
-    border-bottom: 2px solid #fff;
-    margin-bottom:0;
-    }
+   
     
     main ul{
         list-style-type:none;
     
     }
 
-    #forecast{
+    .forecast{
         text-align:center;
         margin-bottom:1.5em;
         margin-top:-5em;
@@ -243,27 +200,12 @@ nav ul{
     
     .left{
         font-size:1.5em;
-        text-align:right;
-        font-family: 'Roboto', sans-serif;
-        float:left;
-        margin-top:0px;
-        margin-left:15%;
-        margin-right:auto;
-        padding-top:.5em;
        }
 
     
     .right{
-        font-family: 'Roboto', sans-serif;
-        font-weight:bold;
-        color: #eccb0b;
         font-size:1.5em;
-        padding-left:.5em;
-        padding-top:.5em;
-        float:left;
-        margin-top:0px;
-       
-    }
+        }
     
     
     .small{
@@ -297,7 +239,7 @@ nav ul{
 
     
   
-@media  (max-width:911px){
+
 #parkimgL {
     display: block;
     padding-top: 3em;
@@ -310,7 +252,7 @@ nav ul{
 }
 }
 
-@media screen and (min-width:911px){
+@media screen and (min-width:57rem){
 
     #parkimgL {
         display: block;
@@ -330,7 +272,21 @@ nav ul{
         
         
         }
-}
+
+        .weatherBox{
+            background-color:rgba(45,46,134,60%);
+            color:#fff;
+            box-shadow:0 0 1em #000 ;
+            width:25%;
+    
+        }
+        
+        .weathersummary{
+        font-size:2em;
+      }
+
+
+    }
 
 #parkimgS{
     display:none;
@@ -367,10 +323,6 @@ nav ul{
         width:100%;
         font-style:normal;
         background-color:#9294c9;
-    
-        
-    
-    
     }
 
     #largewrapper{
@@ -447,14 +399,7 @@ nav ul{
     }
 }
 
-/*--json---*/
-.jsoncontent{
-    width: 90%;
-    margin-left:auto;
-    margin-right:auto;
-    background-color:#fff;
-    border:none;
-}
+
     
     
     
@@ -462,13 +407,12 @@ nav ul{
 /*------galleryflex--------*/
 
 
-@media screen and (min-width: 1000px){
-     .gridcontainer{
-        display:grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-gap:20px;
-        
+@media screen and (min-width: 62.5rem){
+
+    .gridcontainer{
+        flex-wrap: nowrap;
     }
+  
 
 
     figure{
@@ -505,7 +449,7 @@ nav ul{
         /*lagest screen media querry*/
 
 
-        @media (min-width: 818px){
+        @media screen and (min-width: 51.125rem){
 
             nav ul li a{
                display:inline-block;
@@ -525,8 +469,6 @@ nav ul{
             h1{
                 color:#fff;
                 font-family: 'Roboto', sans-serif;
-                font-size: 4.5em;
-                margin-top:1em;
                 margin-bottom:0px;
                 padding:0px;
                 text-align: left;
@@ -562,7 +504,8 @@ nav ul{
 
             /*table*/
 
-           table{ width:45%;
+           table{ 
+            width:45%;
             margin-left:auto;
             margin-right:auto;
             border-collapse: collapse;
@@ -583,13 +526,8 @@ nav ul{
             color:#fff;
         
         }
-.townBox{
-    border:solid 2px #000;
-    background-color:#2d2e86;
-    margin-top:3em;
-    text-align:center;
-   
-}
+        
+      
 
 
         /*index api town boxes*/
@@ -598,7 +536,8 @@ nav ul{
         
 
 
-               @media screen and (min-width:972px){
+               @media screen and (min-width:60.75rem){
+
                 footer img {
                     float:left;
                     padding-top:1em;

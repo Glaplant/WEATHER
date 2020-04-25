@@ -6,40 +6,40 @@
         <meta name="description" content="preston town weather site">
         <link href="../css/normalize.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/small.css">
+        <link rel="stylesheet" type="text/css" href="../css/medium.css">
         <link rel="stylesheet" type="text/css" href="../css/large.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <script src="../scripts/hamburger.js"></script>
         <script src="../scripts/sodaspringsweathersummary.js"></script>
         <script src="../scripts/forecast.js"></script>
         <script src="../scripts/windchill.js"></script>
-        <title>Clouds Watching</title>
+        <title>Soda Springs | Cloud Watching</title>
        
 
     </head>
     <body>
-        
-           
-            
-        <header id="flexheader">
-            <picture>
-                <source media="(min-width:601px)"  srcset ="../images/sun150px.png">
-                <source media="(max-width:600px)"  srcset ="../images/sun69px.png">
-            <img src="../images/sun69px.png" alt="vector sun art" >
-            </picture>
-            <div id= "headertext">
-            <h1>Clouds Watching</h1>
-            <p id="motto">Relax, it's just the weather.</p>
+        <header class="flexheader">
+            <div>
+                <picture>
+                    <source media="(min-width:601px)"  srcset ="../images/sun150px.png">
+                    <source media="(max-width:600px)"  srcset ="../images/sun69px.png">
+                    <img src="../images/sun69px.png" alt="vector sun art" >
+                </picture>
+            </div>
+            <div class= "headertext">
+                <h1>Cloud Watching</h1>
+                <p class="motto">Relax, it's just the weather.</p>
             </div>  
-        </header>
+    </header>
     
             <nav class="clearfix">
                 
                     
                         <button onclick="toggleMenu()">&#9776;</button>
-                        <ul  id="primaryNav" class="hide">
+                        <ul  id="primaryNav" class="hide navFlex">
                         
                         <li class="active">
-                            <a href=../index.html">Home</a>
+                            <a href="../index.html">Home</a>
                         </li>
                         <li class="active">
                             <a href="preston.html">Preston</a>
@@ -63,28 +63,33 @@
                 <h2>
                      Soda Springs
                 </h2>
-                <section id="weatherBox" class="clearfix">
-                <h3 id="weathersummary">Weather Summary</h3>
-                <ul class="left">
-                    <li >Currently:</li>
-                    <li >High:</li>
-                    <li >Windchill:</li>
-                    <li >Humidity:</li>
-                    <li >Windspeed:</li>
-                </ul>
-                <ul class="right">
-                    <li id="currently" >&deg;F</li>
-                    <li id="high">&deg;F</li>
-                    <li id="windchill">&deg;F</li>
-                    <li id="humidity">%</li>
-                    <li id="windspeed">mph</li>
-                   </ul>
+                <section class="overlap">
+                    <div class="weatherBox">
+                        <h3 class="weathersummary">Weather Summary</h3>
+                        <div class="horizontal_flex">
+                            <ul class="left">
+                                <li >Currently:</li>
+                                <li >High:</li>
+                                <li >Windchill:</li>
+                                <li >Humidity:</li>
+                                <li >Windspeed:</li>
+                            </ul>
+                            <ul class="right">
+                                <li id="currently" ><span>&deg;F</span></li>
+                                <li id="high">&deg;F</li>
+                                <li id="windchill">&deg;F</li>
+                                <li id="humidity">%</li>
+                                <li id="windspeed">mph</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                        <picture>
+                            <source  media="(min-width: 601px)" srcset="../images/Townlarge.jpg">
+                            <source media="(max-width: 600px)" srcset="../images/Town10.jpg">
+                            <img  class="town" src="../images/Town10.jpg" alt="picture of town" >
+                        </picture>
                 </section>
-                <picture>
-                        <source  media="(min-width: 601px)" srcset="../images/Townlarge.jpg">
-                        <source media="(max-width: 600px)" srcset="../images/Town10.jpg">
-                        <img   id="town" src="../images/Town10.jpg" alt="picture of town" >
-                </picture>
                     <section id="forecast"  class="clearfix">
                         <div class="large">
                             <h3 class="large"> 5 Day Forecast </h3>
