@@ -1,188 +1,198 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="preston town weather site">
-        <link href="../css/normalize.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../css/small.css">
-        <link rel="stylesheet" type="text/css" href="../css/medium.css">
-        <link rel="stylesheet" type="text/css" href="../css/large.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <script src="../scripts/hamburger.js"></script>
-        <script src="../scripts/prestonweathersummary.js"></script>
-        <script src="../scripts/forecast.js"></script>
-        <script src="../scripts/windchill.js"></script>
-        <title>Preston | Cloud Watching</title>
-       
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta name="description" content="preston town weather site" />
+		<link href="../css/normalize.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/small.css" />
+		<link rel="stylesheet" type="text/css" href="../css/medium.css" />
+		<link rel="stylesheet" type="text/css" href="../css/large.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto"
+			rel="stylesheet" />
+		<script src="../scripts/hamburger.js"></script>
+		<script type="module" src="../scripts/prestonweathersummary.js"></script>
+		<script src="../scripts/forecast.js"></script>
+		<script src="../scripts/windchill.js"></script>
+		<title>Preston | Cloud Watching</title>
+	</head>
+	<body>
+		<header class="flexheader">
+			<div>
+				<picture>
+					<source media="(min-width:601px)" srcset="../images/sun150px.png" />
+					<source media="(max-width:600px)" srcset="../images/sun69px.png" />
+					<img src="../images/sun69px.png" alt="vector sun art" />
+				</picture>
+			</div>
+			<div class="headertext">
+				<h1>Cloud Watching</h1>
+				<p class="motto">Relax, it's just the weather.</p>
+			</div>
+		</header>
 
-    </head>
-    <body>
-        <header class="flexheader">
-            <div>
-                <picture>
-                    <source media="(min-width:601px)"  srcset ="../images/sun150px.png">
-                    <source media="(max-width:600px)"  srcset ="../images/sun69px.png">
-                    <img src="../images/sun69px.png" alt="vector sun art" >
-                </picture>
-            </div>
-            <div class= "headertext">
-                <h1>Cloud Watching</h1>
-                <p class="motto">Relax, it's just the weather.</p>
-            </div>  
-    </header>
-    
-            <nav class="clearfix">
-                
-                    
-                        <button onclick="toggleMenu()">&#9776;</button>
-                        <ul  id="primaryNav" class="hide  navFlex">
-                        
-                        <li class="active">
-                            <a href="../index.html">Home</a>
-                        </li>
-                        <li class="active">
-                            <a href="preston.html">Preston</a>
-                        </li>
-                        <li class="active">
-                            <a href="sodasprings.html">Soda Springs</a>
-                        </li>
-                        <li class="active">
-                            <a href="fishhaven.html">Fish Haven</a>
-                        </li>
-                        <li class="active">
-                            <a href="stormcenter.html">Storm Center</a>
-                        </li>
-                        <li class="active">
-                            <a href="gallery.html">Gallery</a>
-                        </li>
-                  </ul>
-                </nav>
-         
-             <main >
-                <h2>
-                     Preston Idaho
-                </h2>
-                
-            <section class="overlap">
-                <div class="weatherBox">
-                    <h3 class="weathersummary">Weather Summary</h3>
-                    <div class="horizontal_flex">
-                        <ul class="left">
-                            <li >Currently:</li>
-                            <li >High:</li>
-                            <li >Windchill:</li>
-                            <li >Humidity:</li>
-                            <li >Windspeed:</li>
-                        </ul>
-                        <ul class="right">
-                            <li id="currently" ><span>&deg;F</span></li>
-                            <li id="high">&deg;F</li>
-                            <li id="windchill">&deg;F</li>
-                            <li id="humidity">%</li>
-                            <li id="windspeed">mph</li>
-                        </ul>
+		<nav class="clearfix">
+			<button onclick="toggleMenu()">&#9776;</button>
+			<ul id="primaryNav" class="hide navFlex">
+				<li class="active">
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="active">
+					<a href="preston.html">Preston</a>
+				</li>
+				<li class="active">
+					<a href="sodasprings.html">Soda Springs</a>
+				</li>
+				<li class="active">
+					<a href="fishhaven.html">Fish Haven</a>
+				</li>
+				<li class="active">
+					<a href="stormcenter.html">Storm Center</a>
+				</li>
+				<li class="active">
+					<a href="gallery.html">Gallery</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+ <h2>Preston Idaho</h2>
+			<section class="overlap">
+                <!--<h2>Preston Idaho</h2> -->
+				<div class="weatherBox">
+					<h3 class="weathersummary">Weather Summary</h3>
+					<div class="horizontal_flex">
+                        <div class="col-1">
+						<ul class="left">
+							<li>Currently:</li>
+							<li>High:</li>
+							<li>Windchill:</li>
+							<li>Humidity:</li>
+							<li>Windspeed:</li>
+						</ul>
                     </div>
-                </div>
-                
-                    <picture>
-                        <source  media="(min-width: 601px)" srcset="../images/Townlarge.jpg">
-                        <source media="(max-width: 600px)" srcset="../images/Town10.jpg">
-                        <img  class="town" src="../images/Town10.jpg" alt="picture of town" >
-                    </picture>
-            </section>
-
-                    <section >
-                        <div class="forecast">
-                            <h3 class="bold"> 5 Day Forecast </h3>
-                            <table >
-                               <thead>
-                               </thead>
-                               <tbody>
-                                   <tr>
-                                       <th>Day</th>
-                                       <th id="day1"></th>
-                                       <th id="day2"></th>
-                                       <th id="day3"></th>
-                                       <th id="day4"></th>
-                                       <th id="day5"></th>
-                                       
-                                    </tr>
-                                    <tr>
-                                        <th>Forecast</th>
-                                        <td id="day1f"><img id="icon1" src="#" alt="#"></td>
-                                        <td id="day2f"><img id="icon2" src="#" alt="#"></td>
-                                        <td id="day3f"><img id="icon3" src="#" alt="#"></td>
-                                        <td id="day4f"><img id="icon4" src="#" alt="#"></td>
-                                        <td id="day5f"><img id="icon5" src="#" alt="#"></td>
-
-                                    </tr>
-                                </tbody>
-                           </table>
-                           </div>
-                    </section>
-
-                <article id="middle" class="clearfix">
-                        <picture>
-                            <source  media="(min-width: 1101px)" srcset="../images/Park600px.jpg">
-                            <source  media="(min-width: 601px) and (max-width: 1100px)"  srcset="../images/Park400px.jpg">
-                            <source media="(max-width: 600px)"  srcset="../images/Park_50@0,75x.jpg">
-                            <img  id="parkimgL" src="../images/Park_50@0,75x.jpg"  alt="people in park">
-                        </picture>
-                        <div id="Mcontentwrapper" class="clearfix">
-
-                        <h2 id="founders">Founders Day Fresco</h2>
-                        <p id="author"><i>By Janica Juarez</i></p>
-                         <p id="article"> I was recently reflecting upon the founders day event held at
-                             Foundation Park each year. I have been taking the festival for granted
-                             have not been properly engaging in perhaps the most popular community event of the year. In response, I contacted Ms. Sharon via email
-                             and expressed my desire to serve on the event comittee. Well, you guesed it, the phone rings
-                             almost immediately and she promptly asks me to be the event committee chair. 
-                             Literally, good grief! My appreciation for the years of dedicated, generous service of volunteers
-                             and sponsors has escalated beyond what I thought I could feel for such a thing
-                             and...<a href="article.com">continue to full article</a>
-                        </p>
-        
+                    <div class="col-2">
+						<ul class="right">
+							<li id="currently"></li>
+							<li id="high"></li>
+							<li id="windchill"></li>
+							<li id="humidity"></li>
+							<li id="windspeed"></li>
                         </div>
-                    </article>
-                    </main>
-            <footer id="bottom" class="clearfix">
-                    <div id="largewrapper">
-                         <address>
-                            <ul>
-                             <li id="bold">Cloud Watching </li>
-                             <li>30 N 1st E </li>
-                             <li>Preston ID,83263</li>
-                             <li id="gap">&#9742;  123.456.1234 </li>
-                             <li>&#9993;  Clouds watching.com </li>
-                             </ul>
-                             
-                         </address>
-                     
-                    
-                    <div id="positioning">
-                        <picture>
-                            <source media="(min-width:601px) and (max-width:800px)" srcset="../images/map200px.png">
-                             <img src="../images/map350px.png" alt="map">
-                             
-                             </picture>
-                    </div>
-                 </div>
-                    
-                     <div id="copyright">
-                             <p> &copy; 2020 Cloud Watching | Attributions | Greg La Plant |<a href="https://openweathermap.org">Open Weather Map</a> </p>
-                             <p id="currentdate">why dosent this work</p>
-                             </div>
+						</ul>
+					</div>
+				</div>
 
-                         </footer>
-        <script src="../scripts/currentdate.js"></script>
-       
-       
+				<!-- <picture>
+					<source media="(min-width: 601px)" srcset="../images/Townlarge.jpg" />
+					<source media="(max-width: 600px)" srcset="../images/Town10.jpg" />
+					<img class="town" src="../images/Town10.jpg" alt="picture of town" />
+				</picture> -->
+			</section>
 
-            
-    
-        
- 
- 
-    </body>
+			<section class="forecast">
+				<div class="forecast">
+					<h3 class="bold">5 Day Forecast</h3>
+					<table>
+						<thead></thead>
+						<tbody>
+							<tr>
+								<th>Day</th>
+								<th id="day1"></th>
+								<th id="day2"></th>
+								<th id="day3"></th>
+								<th id="day4"></th>
+								<th id="day5"></th>
+							</tr>
+							<tr>
+								<th>Forecast</th>
+								<td id="day1f"><img id="icon1" src="#" alt="#" /></td>
+								<td id="day2f"><img id="icon2" src="#" alt="#" /></td>
+								<td id="day3f"><img id="icon3" src="#" alt="#" /></td>
+								<td id="day4f"><img id="icon4" src="#" alt="#" /></td>
+								<td id="day5f"><img id="icon5" src="#" alt="#" /></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<article id="middle" class="clearfix">
+				<picture class="postPicture">
+					<source
+						media="(min-width: 1101px)"
+						srcset="../images/Park600px.jpg" />
+					<source
+						media="(min-width: 601px) and (max-width: 1100px)"
+						srcset="../images/Park400px.jpg" />
+					<source
+						media="(max-width: 600px)"
+						srcset="../images/Park_50@0,75x.jpg" />
+					<img
+						id="parkimgL"
+						src="../images/Park_50@0,75x.jpg"
+						alt="people in park" />
+				</picture>
+				<div id="Mcontentwrapper" class="clearfix">
+					<h2 id="founders">Founders Day Fresco</h2>
+					<p id="author"><i>By Janica Juarez</i></p>
+					<p id="article">
+						I was recently reflecting upon the founders day event held at
+						Foundation Park each year. I have been taking the festival for
+						granted have not been properly engaging in perhaps the most popular
+						community event of the year. In response, I contacted Ms. Sharon via
+						email and expressed my desire to serve on the event comittee. Well,
+						you guesed it, the phone rings almost immediately and she promptly
+						asks me to be the event committee chair. Literally, good grief! My
+						appreciation for the years of dedicated, generous service of
+						volunteers and sponsors has escalated beyond what I thought I could
+						feel for such a thing and...<a href="article.com"
+							>continue to full article</a
+						>
+					</p>
+				</div>
+			</article>
+			<section>
+				<div id="positioning">
+					<picture>
+						<source
+							media="(min-width:601px) and (max-width:800px)"
+							srcset="../images/map200px.png" />
+						<img src="../images/map350px.png" alt="map" />
+					</picture>
+				</div>
+			</section>
+		</main>
+		<footer id="bottom" class="clearfix">
+			<div id="largewrapper">
+				<address>
+					<ul>
+						<li id="bold">Cloud Watching</li>
+						<li>30 N 1st E</li>
+						<li>Preston ID,83263</li>
+						<li id="gap">&#9742; 123.456.1234</li>
+						<li>&#9993; Clouds watching.com</li>
+					</ul>
+				</address>
+			</div>
+
+			<div id="copyright">
+				<p>
+					&copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					Cloud Watching | Attributions | Greg La Plant |<a
+						href="https://openweathermap.org"
+						>Open Weather Map</a
+					>
+				</p>
+				<p id="currentdate">why dosent this work</p>
+			</div>
+		</footer>
+		<script src="../scripts/currentdate.js"></script>
+	</body>
 </html>

@@ -1,7 +1,33 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('tff'),
+         
+    /* Add other formats if needed */
+ 
+}
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/Roboto/Roboto-Black.ttf') format('ttf'),
+    /* Add other formats if needed */
+ 
+}
+
+:root{
+
+    --primaryText: 'Roboto';
+    --robotoBlack: 'Roboto Black';
+    --purple:#9294c9;
+}
+
+
+
+
 @media screen and (min-width:37.5rem) {
 
    h3,h2,h1,li, p{
-        font-family: 'Roboto', sans-serif;
+        font-family: var(--primaryText), sans-serif;
         font-size:1em;
     }
     
@@ -27,7 +53,7 @@
     
     h1{
         color:#fff;
-        font-family: 'Roboto', sans-serif;
+        font-family: var(--primaryText), sans-serif;
         font-size: 3.5em;
         margin-bottom:0px;
         padding:0px;
@@ -36,7 +62,7 @@
     }
     
     #motto{
-        font-family: 'Roboto', sans-serif;
+        font-family: var(--primaryText), sans-serif;
         font-size:1.2em;
         font-style:italic;
         color:#fff;
@@ -67,7 +93,7 @@
 
 nav{
     color:#fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primaryText), sans-serif;
    background-color:#9294c9;
  }
 
@@ -115,12 +141,12 @@ nav ul li .active a{
       
       
       
-nav ul li a:hover{
+/* nav ul li a:hover{
           background-color:rgba(0,0,0,0.4);
           width:100%;
           
       
-      }
+      } */
 
       /*-------main------*/
 
@@ -132,14 +158,15 @@ nav ul li a:hover{
 
 
 
-        .weatherBox{
+        /* .weatherBox{
             position: absolute;
-            top:.5rem;
-            left:.5rem;
-            width:50%;
-            transform:none;
+            max-width:50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
 
-        }
+        } */
      /*#flexTop{
           display:flex;
           align-content:center;
@@ -173,7 +200,7 @@ nav ul li a:hover{
 
       figcaption{
         
-          font-family: 'Roboto', sans-serif;
+          font-family: var(--primaryText), sans-serif;
       }
 
       figure{
@@ -206,7 +233,7 @@ nav ul li a:hover{
 
 
 footer p{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primaryText), sans-serif;
     font-size:0.75em;
    
 
