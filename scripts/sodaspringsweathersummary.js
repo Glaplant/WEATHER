@@ -1,5 +1,5 @@
-import { fetchData } from "./fetchmodule.js";
-fetchData("5678757");
+import { fetchWeatherData } from "./fetchmodule.js";
+fetchWeatherData("5678757");
 
 
 // let weatherRequest = new XMLHttpRequest();

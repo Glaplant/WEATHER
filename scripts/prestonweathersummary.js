@@ -1,5 +1,6 @@
-import { fetchData } from "./fetchmodule.js";
- fetchData("5604473");
+import { fetchWeatherData, fetchForecastData } from "./fetchmodule.js";
+fetchWeatherData("5604473");
+fetchForecastData("5604473");
  //async function getWeatherData(id = "5604473") {// preston id = 5604473//https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=9fc9de3e82518889680cc852f9a5b5d9"async function getWeatherData(id = "5604473") {
 // async function getWeatherData(id) {
 // 	try {
