@@ -535,12 +535,25 @@ footer img {
 
 
 
-
+table {
+    box-shadow: 0px 20px 25px 10px rgba(0,0,0, 0.45);
+}
 
 
 /*------galleryflex--------*/
+#positioning {
+    text-align: center;
+    background-image: url(../images/map350px.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-
+.townBox {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
 
 @media screen and (min-width: 62.5rem) {
 

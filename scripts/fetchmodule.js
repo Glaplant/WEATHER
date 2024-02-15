@@ -74,8 +74,10 @@ async function fetchForecastData(id) {
 	console.log(dayOneIcon);
 
 	const dayOne = document.querySelector("#day1");
-	const paragraphOne = createElement(p);
-	const dateOne = new Date().parse(weekArray[0].dt_txt);
+	const paragraphOne = document.createElement("p");
+	let dateOne = new Date(weekArray[0].dt_txt);
+	console.log(dateOne);
+	dateOne = dateOne.toString().split("2024").shift();
 	console.log(dateOne);
 	paragraphOne.innerText = dateOne;
 	dayOne.appendChild(paragraphOne);
