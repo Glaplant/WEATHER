@@ -1,5 +1,6 @@
-import { fetchWeatherData } from "./fetchmodule.js";
+import { fetchWeatherData, fetchForecastData } from "./fetchmodule.js";
 fetchWeatherData("5585010");
+fetchForecastData("5585010");
 
 // let weatherRequest = new XMLHttpRequest();
 // let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=9fc9de3e82518889680cc852f9a5b5d9';

@@ -73,6 +73,7 @@ async function fetchForecastData(id) {
 	/*----Day 1--*/
 	console.log(dayOneIcon);
 
+
 	const dayOne = document.querySelector("#day1");
 	const paragraphOne = document.createElement("p");
 	let dateOne = new Date(weekArray[0].dt_txt);
@@ -82,26 +83,52 @@ async function fetchForecastData(id) {
 	paragraphOne.innerText = dateOne;
 	dayOne.appendChild(paragraphOne);
 
-	document.querySelector("#day2").innerText = weekArray[1].dt_txt;
-	document.querySelector("#day3").innerText = weekArray[2].dt_txt;
-	document.querySelector("#day4").innerText = weekArray[3].dt_txt;
-	document.querySelector("#day5").innerText = weekArray[4].dt_txt;
+	const dayTwo = document.querySelector("#day2");
+	const paragraphTwo = document.createElement("p");
+	let dateTwo = new Date(weekArray[1].dt_txt);
+	console.log(dateTwo);
+	dateTwo = dateTwo.toString().split("2024").shift();
+	console.log(dateTwo);
+	paragraphTwo.innerText = dateTwo;
+	dayTwo.appendChild(paragraphTwo);
+
+	const dayThree = document.querySelector("#day3");
+	const paragraphThree = document.createElement("p");
+	let dateThree = new Date(weekArray[2].dt_txt);
+	console.log(dateThree);
+	dateThree = dateThree.toString().split("2024").shift();
+	console.log(dateThree);
+	paragraphThree.innerText = dateThree;
+	dayThree.appendChild(paragraphThree);
+
+	const dayFour = document.querySelector("#day4");
+	const paragraphFour = document.createElement("p");
+	let dateFour = new Date(weekArray[3].dt_txt);
+	console.log(dateFour);
+	dateFour = dateFour.toString().split("2024").shift();
+	console.log(dateFour);
+	paragraphFour.innerText = dateFour;
+	dayFour.appendChild(paragraphFour);
+
+	const dayFive = document.querySelector("#day5");
+	const paragraphFive = document.createElement("p");
+	let dateFive = new Date(weekArray[4].dt_txt);
+	console.log(dateFive);
+	dateFive = dateFive.toString().split("2024").shift();
+	console.log(dateFive);
+	paragraphFive.innerText = dateFive;
+	dayFive.appendChild(paragraphFive);
+
+	// document.querySelector("#day2").innerText = weekArray[1].dt_txt;
+	// document.querySelector("#day3").innerText = weekArray[2].dt_txt;
+	// document.querySelector("#day4").innerText = weekArray[3].dt_txt;
+	// document.querySelector("#day5").innerText = weekArray[4].dt_txt;
 	//document.querySelector("#day1f").innerText = listArray.list[3].main.temp;
-	document.querySelector(
-		"#icon1"
-	).src = `http://openweathermap.org/img/w/${dayOneIcon}.png`;
-	document.querySelector(
-		"#icon2"
-	).src = `http://openweathermap.org/img/w/${dayTwoIcon}.png`;
-	document.querySelector(
-		"#icon3"
-	).src = `http://openweathermap.org/img/w/${dayThreeIcon}.png`;
-	document.querySelector(
-		"#icon4"
-	).src = `http://openweathermap.org/img/w/${dayFourIcon}.png`;
-	document.querySelector(
-		"#icon5"
-	).src = `http://openweathermap.org/img/w/${dayFiveIcon}.png`;
+	document.querySelector("#icon1").src = `http://openweathermap.org/img/w/${dayOneIcon}.png`;
+	document.querySelector("#icon2").src = `http://openweathermap.org/img/w/${dayTwoIcon}.png`;
+	document.querySelector("#icon3").src = `http://openweathermap.org/img/w/${dayThreeIcon}.png`;
+	document.querySelector("#icon4").src = `http://openweathermap.org/img/w/${dayFourIcon}.png`;
+	document.querySelector("#icon5").src = `http://openweathermap.org/img/w/${dayFiveIcon}.png`;
 }
 
 //7,14,21,28,35

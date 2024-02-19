@@ -64,9 +64,11 @@
 		<main>
 			<h2>Fish Haven</h2>
 			<section class="overlap">
+                <!--<h2>Preston Idaho</h2> -->
 				<div class="weatherBox">
 					<h3 class="weathersummary">Weather Summary</h3>
 					<div class="horizontal_flex">
+                        <div class="col-1">
 						<ul class="left">
 							<li>Currently:</li>
 							<li>High:</li>
@@ -74,26 +76,29 @@
 							<li>Humidity:</li>
 							<li>Windspeed:</li>
 						</ul>
+                    </div>
+                    <div class="col-2">
 						<ul class="right">
-							<li id="currently"><span>&deg;F</span></li>
-							<li id="high">&deg;F</li>
-							<li id="windchill">&deg;F</li>
-							<li id="humidity">%</li>
-							<li id="windspeed">mph</li>
+							<li id="currently"></li>
+							<li id="high"></li>
+							<li id="windchill"></li>
+							<li id="humidity"></li>
+							<li id="windspeed"></li>
+                        </div>
 						</ul>
 					</div>
 				</div>
 
-				<picture>
+				<!--<picture>
 					<source media="(min-width: 601px)" srcset="../images/Townlarge.jpg" />
 					<source media="(max-width: 600px)" srcset="../images/Town10.jpg" />
 					<img class="town" src="../images/Town10.jpg" alt="picture of town" />
-				</picture>
+				</picture> -->
 			</section>
-			<section id="forecast" class="clearfix">
-				<div class="large">
-					<h3 class="large">5 Day Forecast</h3>
-					<table>
+			<section class="forecast">
+				<div class="forecast">
+					<h3 class="bold">5 Day Forecast</h3>
+					<!-- <table>
 						<thead></thead>
 						<tbody>
 							<tr>
@@ -114,10 +119,35 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+					<table>
+						<thead></thead>
+						<tbody> -->
+							<div class="forecastGrid">
+								<ul class="topGrid">
+								<li>Day</li>
+								<li id="day1"></li>
+								<li id="day2"></li>
+								<li id="day3"></li>
+								<li id="day4"></li>
+								<li id="day5"></li>
+								</ul>
+								<ul class="bottomGrid">
+								<li>Forecast</li>
+								<li id="day1f"><img id="icon1" src="#" alt="#" /></li>
+								<li id="day2f"><img id="icon2" src="#" alt="#" /></li>
+								<li id="day3f"><img id="icon3" src="#" alt="#" /></li>
+								<li id="day4f"><img id="icon4" src="#" alt="#" /></li>
+								<li id="day5f"><img id="icon5" src="#" alt="#" /></li>
+							</ul>
+							</div>
+						</div>
+				 	</div>
 			</section>
-			<article id="middle" class="clearfix">
-				<picture>
+
+			<section class="middle">
+				<div>
+					<div class="bg_img">
+				<!--<picture class="postPicture">
 					<source
 						media="(min-width: 1101px)"
 						srcset="../images/Park600px.jpg" />
@@ -131,11 +161,12 @@
 						id="parkimgL"
 						src="../images/Park_50@0,75x.jpg"
 						alt="people in park" />
-				</picture>
-				<div id="Mcontentwrapper" class="clearfix">
-					<h2 id="founders">Founders Day Fresco</h2>
-					<p id="author"><i>By Janica Juarez</i></p>
-					<p id="article">
+				</picture> -->
+				</div>
+				<div class="Mcontentwrapper">
+					<h2>Founders Day Fresco</h2>
+					<p><i>By Janica Juarez</i></p>
+					<p>
 						I was recently reflecting upon the founders day event held at
 						Foundation Park each year. I have been taking the festival for
 						granted have not been properly engaging in perhaps the most popular
@@ -150,7 +181,19 @@
 						>
 					</p>
 				</div>
-			</article>
+			</div>
+			</section>
+			<section>
+				<div id="positioning">
+					<!--<picture>
+						<source
+							media="(min-width:601px) and (max-width:800px)"
+							srcset="../images/map200px.png" />
+						<img src="../images/map350px.png" alt="map" />
+					</picture> -->
+				</div>
+			</section>
+		</main>
 		</main>
 		<footer id="bottom" class="clearfix">
 			<div id="largewrapper">
