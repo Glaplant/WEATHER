@@ -1,6 +1,7 @@
 
 var today = new Date();
-
+const fullYear = new Date().getFullYear();
+const copyright = document.querySelector('#copyright p');
 
 var months = ["January","Febuary","March","April","May",
 "June","July","August","September","October","November",
@@ -26,5 +27,6 @@ var currentdate =  day  + " , " + date + " " + month + " " + year ;
 
 
 
-document.getElementById("currentdate").innerHTML = currentdate;
+const copyText = document.createTextNode(` \u00A9 ${fullYear} Clouds Watching | Attributions | Greg La Plant `);
 
+copyright.appendChild(copyText);

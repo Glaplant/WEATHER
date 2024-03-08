@@ -10,13 +10,14 @@
             <link rel="stylesheet" type="text/css" href="css/large.css">
            <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
             <script src="scripts/hamburger.js"></script>
-            <script src="scripts/preston.js"></script>
+            <script type="module" src="scripts/prestonweathersummary.js"></script>
             <script src="scripts/weatherapi.js"></script>
             <title>Home | Cloud Watching</title>
        </head>
         <body>
             <header class="flexheader">
-                    <div>
+                <div class="header-row">
+                    <div >
                         <picture>
                             <source media="(min-width:601px)"  srcset ="images/sun150px.png">
                             <source media="(max-width:600px)"  srcset ="images/sun69px.png">
@@ -27,6 +28,7 @@
                         <h1>Cloud Watching</h1>
                         <p class="motto">Relax, it's just the weather.</p>
                     </div>  
+                </div>
             </header>
     
             <nav class="clearfix">
@@ -101,7 +103,7 @@
                 </main>
 
 
-<footer id="bottom" class="clearfix">
+<footer id="bottom" >
         <div id="largewrapper">
              <address>
                 <ul>
@@ -117,13 +119,13 @@
         
        
      </div>
-        
+        <div class="copy-row">
                  <div id="copyright">
-                      <p> &copy; 2020 Clouds Watching | Attributions | Greg La Plant </p>
-                       <p id="currentdate">why dosent this work</p>
+                 <p></p>
                  </div>
+        </div>
 
-             </footer>
+        </footer>
 <script src="scripts/currentdate.js"></script>
 
 
